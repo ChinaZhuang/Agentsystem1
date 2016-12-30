@@ -8,7 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
  <base href="<%=basePath%>">
-<title>协同OA办公系统</title>
+<title>代理商管理系统</title>
+<link rel="Shortcut Icon" href="<%=basePath%>images/top/scream_128px_1206757_easyicon.net.ico" type="image/x-icon" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <frameset rows="100,*,25" framespacing="0" border="0" frameborder="0">

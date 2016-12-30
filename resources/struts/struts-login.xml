@@ -9,7 +9,9 @@
 		<!-- 设置Action -->
 		<action name="login" class="com.agentsystem.action.UserAction" method="userLogin">
 			<result name="fail">/jsp/common/login.jsp</result>
-			<result name="success" >/jsp/common/index.jsp</result>
+			<result name="success" >
+				 /jsp/common/index.jsp
+			</result>
 		</action>
 		
 		<action name="validateLoginUser" class="loginAction" method="validateLoginUser">
