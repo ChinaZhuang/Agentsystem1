@@ -14,16 +14,16 @@ function validateLoginUserFunc(){
 		 ymPrompt.alert({message:'登录密码不能为空!',title:'提示',handler:null});
 	}else{
 		$.ajax({
-			url: 'login',
+			url: 'login.action',
 			type: 'POST',
 			async:false,
 			data:{'user.userCode':usercode,'user.userPassword':userpassword},
 			dataType: 'json',
 			timeout: 5000,
-			error: function(){
+		/*	error: function(){
 				//alert("error");
 				ymPrompt.errorInfo({message:'连接失败',handler:null});
-			},
+			},*/
 			success: function(result){
 				if("noexitusercode" == result){
 					//alert("对不起，登陆账号不存在！");

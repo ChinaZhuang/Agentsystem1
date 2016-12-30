@@ -5,7 +5,7 @@
 
 <struts>
 	<package name="login" namespace="/" extends="global">
-		<default-action-ref name="pagenotfound"/>
+	<default-action-ref name="pagenotfound"/> 
 		<!-- 设置Action -->
 		<action name="login" class="com.agentsystem.action.UserAction" method="userLogin">
 			<result name="fail">pages/login.jsp</result>

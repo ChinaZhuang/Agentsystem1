@@ -22,6 +22,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <h1>index</h1> <br>
-    <img src="images/u0.png"></img>
+    <img src="images/u0.png"></img><img src="images/loginpage/u0.png"></img>
   </body>
 </html>

@@ -41,8 +41,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<h1>AgentSystem | 代理商管理系统 <span>v1.01</span></h1>
 	</div>
 	<div class="container" style="height: 380">
-		<form action="/login" method="post" class="jNice"
-			onsubmit="return validateLoginUserFunc();">
+		<form action="login.action" method="post" class="jNice"
+			>
 			<h1>登录系统 | Sign in</h1>
 			<ul class="loginul">
 				<li style="color: blue;font-size: 17">登录账号：<input type="text"

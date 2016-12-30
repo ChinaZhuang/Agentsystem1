@@ -6,6 +6,6 @@ import com.agentsystem.pojo.User;
 
 public interface UserDao {
 	
-	public List<User> findUser(User user);
+	public User findUser(User user);
 	
 }
