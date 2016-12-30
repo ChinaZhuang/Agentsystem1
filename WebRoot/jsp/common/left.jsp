@@ -18,14 +18,93 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<link type="text/css" rel="stylesheet" href="<%=basePath%>style/blue/menu.css" />
+	<link rel="stylesheet" href="<%=basePath%>style/zTreeStyle/zTreeStyle.css" type="text/css"> 
+	<!-- easyUI组件 -->
+  <script type="text/javascript" src="<%=basePath%>jquery-easyui-1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="<%=basePath%>jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+   <link rel="stylesheet" href="<%=basePath%>jquery-easyui-1.4.1/themes/icon.css" type="text/css"></link>
+  <link rel="stylesheet" href="<%=basePath%>jquery-easyui-1.4.1/themes/default/easyui.css" type="text/css"></link>
+  
+  
   </head>
 
-  <body>
-    <h1>index</h1> <br>
-  <a target="right" href="<%=basePath%>jsp/common/list.jsp">链接</a>
-  <a target="right" href="http://www.w3school.com.cn/tiy/t.asp?f=html_frame_cols">ssss</a><br>
-<a target="right" href="http://www.w3school.com.cn/tiy/t.asp?f=html_frame_cols">导航</a><br>
-<a target="right" href="http://www.w3school.com.cn/tiy/t.asp?f=html_frame_cols">ssss</a><br>
-<a target="right" href="<%=basePath%>jsp/common/list.jsp">ssss</a><br>
-  </body>
+  <body style="margin: 0">
+  		<TABLE border=0 width="100">
+			<TR>
+				<TD width=340px align=center valign=top>
+					 <div class="zTreeDemoBackground">
+  						  <ul id="menuTree" class="easyui-tree">   
+  							  <li>   
+        							<span>代理商管理</span>   
+								        <ul>   
+								            <li>   
+								                <span>关键词申请</span>   
+								            </li>   
+								            <li>   
+								                <span>代理商客户管理</span>   
+								            </li>  
+								            <li>   
+								                <span>代理商预付款</span>   
+								            </li> 
+								            <li>   
+								                <span>关键词申请管理</span>   
+								            </li>
+								            <li>   
+								                <span>操作日志</span>   
+								            </li>
+								        </ul>   
+							  </li>   
+							  <li>   
+        							<span>门户管理</span>   
+								        <ul>   
+								            <li>   
+								                <span>File 2</span>   
+								            </li>   
+								            <li>   
+								                <span>File 3</span>   
+								            </li>   
+								        </ul>   
+							  </li>
+							  <li>   
+        							<span>报表管理</span>   
+								        <ul>   
+								            <li>   
+								                <span>File 2</span>   
+								            </li>   
+								            <li>   
+								                <span>File 3</span>   
+								            </li>   
+								        </ul>   
+							  </li> 
+							  <li>   
+        							<span>系统管理</span>   
+								        <ul>   
+								            <li>   
+								                <span>File 2</span>   
+								            </li>   
+								            <li>   
+								                <span>File 3</span>   
+								            </li>   
+								        </ul>   
+							  </li> 
+							  <li>   
+        							<span>系统配置管理</span>   
+								        <ul>   
+								            <li>   
+								                <span>File 2</span>   
+								            </li>   
+								            <li>   
+								                <span>File 3</span>   
+								            </li>   
+								        </ul>   
+							  </li>  
+								</ul> 
+							</div>
+						</TD>
+					</TR>
+				</TABLE>
+
+  		</body>
 </html>
