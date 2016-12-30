@@ -24,7 +24,7 @@ public class UserAction {
 		this.user = user;
 	}
 	public String userLogin(){
-		System.out.println("UserAction---userLogin"+user.getUserPassword());
+		//能行吗
 		User user1 = this.userService.findUser(user);
 		if (user1==null) {
 			return "fail";
@@ -33,5 +33,13 @@ public class UserAction {
 		}
 		
 	}
-
+	public String add(){
+		//能行吗
+		User user1 = this.userService.findUser(user);
+		if (user1==null) {
+			return "fail";
+		}else{
+			return "success";
+		}
+	}
 }
