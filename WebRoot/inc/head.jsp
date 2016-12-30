@@ -23,7 +23,7 @@
 	<li><h2><!--  <img src="/imgs/logo.png" width="130px"/> --></h2></li>
 	<li class="headfunc">
 		<ul>
-			<li>欢迎您：<s:property value="currentUser.userName"/>
+			<li>欢迎您：<%-- <s:property value="currentUser.userName"/> --%>
 			<a class="modifypwd" id="modifypwdbtna">
 			修改密码
 			</a> <a href="/exit.action">退出</a>
@@ -32,7 +32,7 @@
 	</li>
 </ul>
 </div>
-        <s:iterator value="funcList" status="sta">
+       <%--  <s:iterator value="funcList" status="sta">
             	<tr>
                     <td><s:property value="functionName"/></td>
                 
@@ -43,13 +43,13 @@
 		<ul>
 		<s:iterator value="roleFunctions" status="sta">
 			<s:if test="#sta.index == 0">
-			<li class="m_line"><img src="/imgs/line1.gif" /></li>
+			<li class="m_line"><!-- <img src="/imgs/line1.gif" /> --></li>
 			<li id="m_<s:property value="#sta.index + 1"/>" class='m_li_a' onmouseover='mover(<s:property value="#sta.index + 1"/>);'><a href="<s:property value="mainFunction.funcUrl"/>"><s:property value="mainFunction.functionName"/></a></li>
 			</s:if><s:else>
-			<li class="m_line"><img src="/imgs/line1.gif" /></li>
+			<li class="m_line"><!-- <img src="/imgs/line1.gif" /> --></li>
 			<li id="m_<s:property value="#sta.index + 1"/>" class='m_li' onmouseover='mover(<s:property value="#sta.index + 1"/>);'><a href="<s:property value="mainFunction.funcUrl"/>"><s:property value="mainFunction.functionName"/></a></li>
 			</s:else>
-		</s:iterator>
+		</s:iterator> --%>
 	</ul>
 	</div><!--menu end-->
 
@@ -57,7 +57,7 @@
 
 	<div class="subbox">
 		<ul class="smenu">
-		
+		<%-- 
 			<s:iterator value="roleFunctions" status="sta">
 				<s:if test="subFunctions != null && subFunctions.size()>0">
 					<s:if test="#sta.index == 0">
@@ -106,7 +106,7 @@
 						<a href="/main.action"  title="无权限">无权限</a>
 					</li>
 				</s:else>
-			</s:iterator>	
+			</s:iterator>	 --%>
 </ul>
 	</div>
 
